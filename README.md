@@ -1,6 +1,27 @@
 My dotfiles I guess
 
+CURRENT: Need to finish bootstrap script. Just added prompt if the file exists, so need to 
+figure out a way to overwrite it. But as I am writing this, I think I need a way to do the following:
+if we are in the directory nvim, and a config is found in .config, then we need to notify the user for sure 
+and decide what to do from there
+
+bootstrap script essentially just creates a symlink 
+in the proper config directory to each file in the folder (excluding .git)
+Ex: nvim/ contains configuration and setup for neovim, and bootstrap
+will create a symlink to every file within that directory
+
 TODO: Write a script that can properly bootstrap it
+TOD): rn script only adds nvim (or at least will) so when i finish or add other configs
+need to update that.
+TODO: Add extensibility for things like other OSs
+TODO: this puts in ~/.config instead of directly in ~/, which means it follows XDG format 
+as opposed to other traditional unix style, not sure if this matters
+TODO: Handling for input and such 
+TODO: Extend so that we can add or ignore based on a program's config.
+For example if the script finds that a file exists for nvim/
+it will ask for every file. Maybe add an option that allows the user to say
+override all nvim, or do not override all nvim
+TODO: Honestly it could just use a whole revamp
 
 dotfile specific TODOs
 
