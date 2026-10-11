@@ -1,5 +1,10 @@
 My dotfiles I guess
 
+Usage: 
+git clone git@github.com:Josiah-Emerson/dotfiles.git ~/.dotfiles 
+cd ~/.dotfiles
+./bootstrap.sh
+
 CURRENT: Need to finish bootstrap script. Just added prompt if the file exists, so need to 
 figure out a way to overwrite it. But as I am writing this, I think I need a way to do the following:
 if we are in the directory nvim, and a config is found in .config, then we need to notify the user for sure 
