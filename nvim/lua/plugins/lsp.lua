@@ -7,5 +7,6 @@ return {
 		"neovim/nvim-lspconfig",
 		vim.lsp.enable('clangd'),
 		vim.lsp.enable('lua-language-server'),
+		vim.lsp.enable('gopls'),
 	}
 }
